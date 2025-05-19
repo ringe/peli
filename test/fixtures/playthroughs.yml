@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  player_id: 1
-  started_at: 2025-05-19 21:30:48
-  time_spent: 1
-  score: 1
+  player: one
+  started_at: DateTime.now
+  score: 8
+  time_spent: 18.minutes.to_i
 
 two:
-  player_id: 1
-  started_at: 2025-05-19 21:30:48
-  time_spent: 1
-  score: 1
+  player: two
+  started_at: DateTime.now
+  score: 5
+  time_spent: 22.minutes.to_i

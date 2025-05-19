@@ -4,8 +4,10 @@ one:
   name: MyString
   game: one
   type: Player
+  player_id: agves2
 
 two:
   name: Player 2
   game: one
   type: Player
+  player_id: v3rfds

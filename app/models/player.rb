@@ -1,5 +1,6 @@
 class Player < Account
   belongs_to :game
+  has_many :playthroughs
 
   validates_presence_of :name, :player_id
 
