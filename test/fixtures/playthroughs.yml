@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_id: 1
+  started_at: 2025-05-19 21:30:48
+  time_spent: 1
+  score: 1
+
+two:
+  player_id: 1
+  started_at: 2025-05-19 21:30:48
+  time_spent: 1
+  score: 1
