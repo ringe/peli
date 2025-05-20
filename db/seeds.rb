@@ -8,3 +8,15 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 Game.create if Game.none?
+
+
+#player = Player.first # or find/create a specific player
+#
+#52.times do |i|
+#  Playthrough.create!(
+#    player_id: player.id,
+#    started_at: i.weeks.ago.beginning_of_week + 1.day, # Tuesday each week
+#    time_spent: rand(5..60), # minutes
+#    score: rand(0..100)
+#  )
+#end
