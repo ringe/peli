@@ -3,6 +3,7 @@ class Player < Account
   has_many :playthroughs
 
   validates_presence_of :name, :player_id
+  validates_uniqueness_of :player_id
 
   before_validation :set_player_id
 

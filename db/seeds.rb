@@ -7,16 +7,24 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+require 'active_record/fixtures'
+
 Game.create if Game.none?
 
+ActiveRecord::FixtureSet.create_fixtures('test/fixtures', 'players') if Player.none?
 
-#player = Player.first # or find/create a specific player
-#
-#52.times do |i|
-#  Playthrough.create!(
-#    player_id: player.id,
-#    started_at: i.weeks.ago.beginning_of_week + 1.day, # Tuesday each week
-#    time_spent: rand(5..60), # minutes
-#    score: rand(0..100)
-#  )
-#end
+if Playthrough.none?
+
+  Player.all.each do |player|
+    26.times do |i|
+      5.times do
+        Playthrough.create!(
+          player_id: player.id,
+          started_at: i.weeks.ago.beginning_of_week + rand(0..6).day,
+          time_spent: rand(5..60), # minutes
+          score: rand(0..100)
+        )
+      end
+    end
+  end
+end

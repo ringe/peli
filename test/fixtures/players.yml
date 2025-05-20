@@ -11,3 +11,9 @@ two:
   game: one
   type: Player
   player_id: v3rfds
+
+three:
+  name: Player3
+  game: one
+  type: Player
+  player_id: t5yrw1
